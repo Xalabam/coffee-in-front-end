@@ -1,0 +1,21 @@
+<!--pages/new/new.wxml-->
+<view class ="h1">New Coupon</view>
+ <view class="section">
+    <view class="section__title">Coffe shop name</view>
+    <input name="input" placeholder="Coffee Lab" />
+    <view class="section__title">Adress</view>
+    <input name="input" placeholder="No.34, Shanxi Road, F4" />
+    <view class="section__title">Coupon name</view>
+    <input name="input" placeholder="BOGO Espresso" />
+    <view class="section__title">Description of coupon</view>
+    <input name="input" placeholder="Buy one get one free between 3 pm and 5 pm" />
+    <view class="section__title">Validity period</view>
+    <input name="input" placeholder="Until 2020.12.15" />
+    <view class="section__title">Contact information</view>
+    <input name="input" placeholder="13034578906" />
+  </view>
+
+  <view class="p">Upload an image: </view>
+  <image class='image' src="https://i0.wp.com/www.thecoffeecompass.com/wp-content/uploads/img_0953.jpg?fit=1776%2C1184&ssl=1"></image>
+
+  <button bindtap="" class='button-create-coupon'>Claim this coupon!</button>

@@ -1,0 +1,73 @@
+/* pages/show/show.wxss */
+
+.h1 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.2);
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 45rpx;
+  text-align: left
+}
+
+.button-save-coupon {
+  color: black;
+  border-radius: 4px;
+  background: #E7DEC8;
+  margin-top: 5px;
+  width: 70%;
+  font-size: 45rpx;
+  margin-bottom: 5px;
+}
+
+.coupon-details-container {
+  background-color: #E7DEC8;
+  color: black;
+
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  border-radius: 5px;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 60px;
+  width: 95%;
+  justify-content: center; 
+}
+
+.cafe-info-container {
+  background-color: #E7DEC8;
+  margin-left: 10px;
+  margin-right: 10px;  
+  height: 80px;
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.p {
+font-size: 14px;
+margin-left: 10px;
+}
+
+.banner {
+margin-bottom: 1px;
+height: 170px;
+width: 100%;
+}
