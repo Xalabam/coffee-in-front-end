@@ -18,4 +18,4 @@
   <view class="p">Upload an image: </view>
   <image class='image' src="https://i0.wp.com/www.thecoffeecompass.com/wp-content/uploads/img_0953.jpg?fit=1776%2C1184&ssl=1"></image>
 
-  <button bindtap="" class='button-create-coupon'>Claim this coupon!</button>
+  <button bindtap="" class='button-create-coupon'>Create coupon!</button>
