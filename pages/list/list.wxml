@@ -1,0 +1,10 @@
+<!--pages/list/list.wxml-->
+<view class="h1">Coffee In</view>
+<!-- add a search bar -->
+<view class="searchbar">Around me 📍</view>
+<!-- heading for the list of deals -->
+<view class ="h2">Deals near you</view>
+<!-- list of the deals contained in cards -->
+<view class="container">
+  <view class="photo_header"></view>
+</view>
