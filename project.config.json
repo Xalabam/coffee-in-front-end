@@ -69,6 +69,11 @@
           "pathName": "pages/claims/claims",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/coupons/coupons",
+          "pathName": "pages/coupons/coupons",
+          "scene": null
         }
       ]
     }
