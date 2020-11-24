@@ -2,18 +2,19 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/claims/claims"
   ],
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "Vouchers"
+      "text": "Coupons"
     }, {
       "pagePath": "pages/list/list",
       "text": "Home"
     }, {
-        "pagePath": "pages/list/list",
-        "text": "Coupons"
+        "pagePath": "pages/claims/claims",
+        "text": "Claims"
     }]
   },
 

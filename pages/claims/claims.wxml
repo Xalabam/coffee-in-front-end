@@ -1,0 +1,61 @@
+<!--pages/claims/claims.wxml-->
+<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://www.pngitem.com/pimgs/m/4-46933_the-coffee-bean-tea-leaf-espresso-cafe-dolce.png);">
+
+<!-- <text>pages/claims/claims.wxml</text> -->
+<view class="h1">Coupons Claimed</view>
+<!-- list of saved coupons in my claims -->
+<view class="card-coupon">
+  <view class="card-coupon-infos">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="h2">Buy one get one Lattes</view>
+      <view class="p">@Alex's Cuppas</view>
+      <view class="p">Expires on: 2020-12-25</view>
+      <view class="expiry p">Valid</view>
+    </view>
+  </view>
+</view>
+
+<view class="card-coupon">
+  <view class="card-coupon-infos">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="h2">Buy one get one Lattes</view>
+      <view class="p">@Alex's Cuppas</view>
+      <view class="p">Expires on: 2020-12-25</view>
+      <view class="expiry p">Valid</view>
+    </view>
+  </view>
+</view>
+
+<view class="card-coupon">
+  <view class="card-coupon-infos">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="h2">Buy one get one Mochas</view>
+      <view class="p">@Ariel's Cuppas</view>
+      <view class="p">Expires on: 2020-11-30</view>
+      <view class="expiry p">Valid</view>
+    </view>
+  </view>
+</view>
+<view class="card-coupon">
+  <view class="card-coupon-infos">
+    <view class="large-words">
+      <view class="h2">Set Deal</view>
+    </view>
+    <view class="details">
+      <view class="h2">Cake and Coffee</view>
+      <view class="p">@Hasan's Cuppas</view>
+      <view class="p">Expires on: 2021-1-1</view>
+      <view class="expiry p">Valid</view>
+    </view>
+  </view>
+</view>
+</view>
