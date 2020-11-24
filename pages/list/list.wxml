@@ -5,6 +5,24 @@
 <!-- heading for the list of deals -->
 <view class ="h2">Deals near you</view>
 <!-- list of the deals contained in cards -->
-<view class="container">
-  <view class="photo_header"></view>
+<view class="card-coupon">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <view class="card-coupon-infos">
+      <view class="h3">Buy one, get one on Christmas Lattes!</view>
+      <view class="coupon-details">
+        <view class="p">@Alex's Cuppas - Chengdu Road Store</view>
+        <view class="p">500m away</view>
+      </view>
+  </view>
 </view>
+<view class="card-coupon">
+  <image src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" />
+  <view class="card-coupon-infos">
+      <view class="h3">Buy one, get one on Christmas Lattes!</view>
+      <view class="coupon-details">
+        <view class="p">@Hasan's Cuppas - NJX Road Store</view>
+        <view class="p">820m away</view>
+      </view>
+  </view>
+</view>
+ 
