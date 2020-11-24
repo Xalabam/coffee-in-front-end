@@ -4,6 +4,19 @@
     "pages/logs/logs",
     "pages/list/list"
   ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Vouchers"
+    }, {
+      "pagePath": "pages/list/list",
+      "text": "Home"
+    }, {
+        "pagePath": "pages/list/list",
+        "text": "Coupons"
+    }]
+  },
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
