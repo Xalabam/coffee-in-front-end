@@ -11,8 +11,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function (coupons) {
+    this.setData({id: coupons.id})
   },
 
   /**
@@ -26,7 +26,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const page = this
+    // wx.request({
+    //   url: `http://localhost:3000/api/v1/stories/${this.name.id}`,
+    //   success: function(res) {
+    //     const story = res.data
+    //     page.setData(story)
+    //   }
+    // })
   },
 
   /**
