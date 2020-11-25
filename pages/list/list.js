@@ -5,13 +5,14 @@ Page({
    * Page initial data
    */
   data: {
-
+  
   },
-
+  
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    
     // const base_url = 'http://localhost:3000/api/v1/'
     // const page = this
     // wx.request({
@@ -31,10 +32,17 @@ Page({
 
   },
 
+  goToShow: function (event) {
+    const id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/show/show?id=${id}`,
+    })
+  },
   /**
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    const coffee_image = 'https://source.unsplash.com/600x300/?cafe,coffee'
     const base_url = 'http://localhost:3000/api/v1/'
     const page = this
     wx.request({
