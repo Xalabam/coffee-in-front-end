@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
-    "pages/claims/claims"
+    "pages/claims/claims",
+    "pages/show/show",
+    "pages/new/new"
   ],
   "tabBar": {
     "list": [{

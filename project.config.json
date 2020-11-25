@@ -6,18 +6,18 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
-    "enhance": false,
     "postcss": true,
-    "preloadBackgroundData": false,
     "minified": true,
     "newFeature": true,
-    "coverView": true,
     "nodeModules": false,
     "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
+    "enhance": false,
+    "preloadBackgroundData": false,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
@@ -38,7 +38,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
-  "appid": "wxde0bde99ae208c96",
+  "appid": "wxfee7ff82e1576bc1",
   "projectname": "coffee-in-front-end",
   "debugOptions": {
     "hidedInDevtools": []
@@ -47,6 +47,12 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
     "plugin": {
       "list": []
     },
@@ -59,15 +65,16 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/list/list",
-          "pathName": "pages/list/list",
+          "id": -1,
+          "name": "pages/show/show",
+          "pathName": "pages/show/show",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/claims/claims",
-          "pathName": "pages/claims/claims",
-          "query": "",
+          "id": -1,
+          "name": "pages/new/new",
+          "pathName": "pages/new/new",
           "scene": null
         }
       ]
