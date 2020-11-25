@@ -1,7 +1,5 @@
 <!--pages/list/list.wxml-->
-,f,sdssqws21
-c
-,,,,,,
+
 <view class="h1">Coffee In</view>
 <!-- add a search bar -->
 <view class="searchbar">Around me 📍</view>
@@ -29,3 +27,14 @@ c
   </view>
 </view>
  
+
+
+  <view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
+    <!-- <view bindtap="goToShow" class="card-product" data-id="{{story.id}}"> -->
+    <!-- <image src="{{story.image}}" /> -->
+    <view class="card-product-infos">
+      <view class='h2'>{{coupon.name}}</view>
+      <text>{{coupon.offer}}</text>
+    </view>
+    <!-- </view> -->
+  </view>
