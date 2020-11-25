@@ -12,16 +12,16 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const base_url = 'http://localhost:3000/api/v1/'
-    const page = this
-    wx.request({
-      url: base_url + 'coupons',
-      success: function (response) {
-        // console.log(response)
-        const coupons = response.data.coupons
-        page.setData({ coupons })
-      }
-    })
+    // const base_url = 'http://localhost:3000/api/v1/'
+    // const page = this
+    // wx.request({
+    //   url: base_url + 'coupons',
+    //   success: function (response) {
+    //     // console.log(response)
+    //     const coupons = response.data.coupons
+    //     page.setData({ coupons })
+    //   }
+    // })
   },
 
   /**
