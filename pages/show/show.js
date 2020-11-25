@@ -36,7 +36,7 @@ Page({
     console.log(page.data)
     wx.request({
     
-      url: `http://localhost:3000/api/v1/coupons/${page.data.id}`,
+      url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons/${page.data.id}`,
       success: function(res) {
         const coupon = res.data
         console.log(coupon)

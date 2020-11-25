@@ -43,7 +43,7 @@ Page({
    */
   onShow: function () {
     const coffee_image = 'https://source.unsplash.com/600x300/?cafe,coffee'
-    const base_url = 'http://localhost:3000/api/v1/'
+    const base_url = 'https://coffee-in-xalabam.herokuapp.com/api/v1/'
     const page = this
     wx.request({
       url: base_url + 'coupons',

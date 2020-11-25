@@ -19,13 +19,14 @@
 }
 
 .button-claim-coupon {
-  color: black;
   border-radius: 4px;
-  background: #E7DEC8;
+  background: #7E8A97;
   margin-top: 5px;
   width: 70%;
   font-size: 45rpx;
   margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
 }
 
 .coupon-details-container {
