@@ -1,0 +1,51 @@
+/* pages/new/new.wxss */
+.h1 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.2);
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.section input {
+  background-color: #E7DEC8
+}
+
+.section__title {
+  font-weight: bold;
+  margin: 3px 3px;
+  
+}
+
+.section {
+  margin: 10px 10px 10px 10px;
+}
+
+.p {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.button-create-coupon {
+  color: black;
+  border-radius: 4px;
+  background: #E7DEC8;
+  margin-top: 5px;
+  width: 70%;
+  font-size: 45rpx;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.image {
+  margin-bottom: 1px;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 140px;
+  
+
+}

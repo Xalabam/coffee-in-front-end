@@ -1,0 +1,25 @@
+<!--pages/show/show.wxml-->
+
+<image class='banner' src="http://www.sprinklesomesugar.com/wp-content/uploads/2017/01/IMG_5980.jpg"></image>
+
+
+<view>{{coupon}}</view>
+
+<view class ="h1">20% off on Hazelnut Latte</view>
+<view class ="h2">@Manner Coffee</view>
+<view class ="p">No.345, Nanjing West Road, F B1</view>
+<view class ="coupon-details-container">
+<text class='p'>20% off on all Hazelnut Latte orders</text>
+<text class='p'>Valid until 2020.12.01</text>
+</view>
+
+<view class ="cafe-info-container">
+<text class='p'>Cafe information:</text>
+<text class='p'>Sockets available</text>
+<text class='p'>Washroom available</text>
+</view>
+
+
+<button bindtap="" class='button-save-coupon'>Claim this coupon!</button>
+
+
