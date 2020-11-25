@@ -18,7 +18,7 @@
   text-align: left
 }
 
-.button-save-coupon {
+.button-claim-coupon {
   color: black;
   border-radius: 4px;
   background: #E7DEC8;

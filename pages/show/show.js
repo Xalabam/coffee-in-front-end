@@ -78,5 +78,13 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  claimThisCoupon: function (event) {
+    const id = event.currentTarget.dataset.id;
+
+    wx.switchTab({
+      url: `/pages/claims/claims`,
+    })
+  },
 })
