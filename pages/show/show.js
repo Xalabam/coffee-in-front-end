@@ -5,14 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // name: 
+    // validity:
+    // offer:
+    // address:
+    // shop_name:
+    // shop_info:
+    // contact: 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (coupons) {
-    this.setData({id: coupons.id})
+  onLoad: function (options) {
+    this.setData({id: options.id})
   },
 
   /**
@@ -27,13 +33,16 @@ Page({
    */
   onShow: function () {
     const page = this
-    // wx.request({
-    //   url: `http://localhost:3000/api/v1/stories/${this.name.id}`,
-    //   success: function(res) {
-    //     const story = res.data
-    //     page.setData(story)
-    //   }
-    // })
+    console.log(page.data)
+    wx.request({
+    
+      url: `http://localhost:3000/api/v1/coupons/${page.data.id}`,
+      success: function(res) {
+        const coupon = res.data
+        console.log(coupon)
+        page.setData(coupon)
+      }
+    })
   },
 
   /**
