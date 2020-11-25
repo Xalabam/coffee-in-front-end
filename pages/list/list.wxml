@@ -10,10 +10,10 @@
   <view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}">
     <view class="card-coupon-infos">
       <image src="https://source.unsplash.com/600x300/?cafe,coffee" />
-        <view class="h3">Special deal on {{coupon.name}}!</view>
+        <view class="h3">Special deal on {{coupon.name}} Coffee!</view>
         <view class="coupon-details">
-          <view class="p">at {{coupon.shop_name}}</view>
-          <view class="p">expire on: {{coupon.validity}}</view>
+          <view class="p">At {{coupon.shop_name}} Cafe</view>
+          <view class="p">Expires on: {{coupon.validity}}</view>
         </view>
     </view>
   </view>
