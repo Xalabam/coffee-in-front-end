@@ -1,83 +1,83 @@
 {
-  "description": "Project configuration file",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "newFeature": true,
-    "nodeModules": false,
-    "autoAudits": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "enhance": false,
-    "preloadBackgroundData": false,
-    "coverView": true,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.14.0",
-  "appid": "wxfee7ff82e1576bc1",
-  "projectname": "coffee-in-front-end",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/show/show",
-          "pathName": "pages/show/show",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/new/new",
-          "pathName": "pages/new/new",
-          "scene": null
-        }
-      ]
-    }
-  }
+	"description": "Project configuration file",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"enhance": false,
+		"preloadBackgroundData": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enableEngineNative": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.14.0",
+	"appid": "wxfee7ff82e1576bc1",
+	"projectname": "coffee-in-front-end",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"list": []
+		},
+		"conversation": {
+			"list": []
+		},
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/show/show",
+					"pathName": "pages/show/show",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/new/new",
+					"pathName": "pages/new/new",
+					"scene": null
+				}
+			]
+		}
+	}
 }
