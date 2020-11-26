@@ -4,16 +4,16 @@
 <!-- <text>pages/claims/claims.wxml</text> -->
 <view class="h1">Coupons Claimed</view>
 <!-- list of saved coupons in my claims -->
-<view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
+<view wx:key='index' wx:for="{{claims}}" wx:for-item="claim">
   <view class="card-coupon">
     <view class="card-coupon-infos">
       <view class="large-words">
-        <view class="h2">{{coupon.name}}</view>
+        <view class="h2">{{claim.coupon_id.name}}</view>
       </view>
       <view class="details">
-        <view class="h2">{{coupon.offer}}</view>
-        <view class="p">@ {{coupon.shop_name}}</view>
-        <view class="p">Expires on: {{coupon.validity}}</view>
+        <view class="h2">{{claim.coupon_id.offer}}</view>
+        <view class="p">@ {{claim.coupon_id.shop_name}}</view>
+        <view class="p">Expires on: {{claim.coupon_id.validity}}</view>
         <view class="expiry p">Valid</view>
       </view>
     </view>

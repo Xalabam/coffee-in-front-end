@@ -12,7 +12,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    // const id = getApp().globalData.userId
+    // wx.request({
+    //   url: getApp().globalData.host + `/api/v1/users/${id}/claims`,
+    //   success: function(response) {
+    //     const claims = response.data.claims
+    //     console.log(claims)
+    //     page.setData({ claims })
+    //   }
+    // })
   },
 
   /**
@@ -25,8 +33,18 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  onShow: function () {
-
+  onShow: function (option) {
+    const page = this
+    const id = getApp().globalData.userId
+    console.log(id)
+    wx.request({
+      url: getApp().globalData.host + `/api/v1/users/${id}/claims`,
+      success: function(response) {
+        const claims = response.data.claims
+        console.log(claims)
+        page.setData({claims})
+      }
+    })
   },
 
   /**
