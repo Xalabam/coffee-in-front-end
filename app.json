@@ -8,12 +8,17 @@
     "pages/new/new"
   ],
   "tabBar": {
+    "custom": true,
     "list": [{
       "pagePath": "pages/coupons/coupons",
-      "text": "Coupons"
+      "text": "Coupons",
+      "iconPath": "/images/ic-discount.png",
+      "selectedIconPath": "/images/ic-discount.png"
     }, {
       "pagePath": "pages/list/list",
-      "text": "Home"
+      "text": "Home",
+      "iconPath": "/images/ic-home.png",
+      "selectedIconPath": "/images/ic-home.png"
     }, {
         "pagePath": "pages/claims/claims",
         "text": "Claims"
