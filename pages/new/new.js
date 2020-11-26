@@ -41,7 +41,7 @@ Page({
     // Post data to API
     wx.request({
       // url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons`,
-      url: `http://localhost:3000/api/v1/coupons`,
+      url: getApp().globalData.host + `/api/v1/coupons`,
       method: 'POST',
       data: {coupon: coupon},
       success() {
