@@ -1,0 +1,141 @@
+/* pages/list/list.wxss */
+.searchbar {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  width: 340px;
+  height: 25px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #E7DEC8;
+}
+.h1 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: black;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.2);
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.h3 {
+  margin-top: 3px;
+  margin-left: 10px;
+  color: black;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.p {
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 25rpx;
+}
+
+.card-coupon {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 7px;
+  padding: 5px 5px;
+  height: 120px;
+}
+
+/* .card-coupon h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-coupon p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+} */
+
+
+
+.coupon-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+image {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.coupon-info{
+  background-color: #E7DEC8;
+  border-radius: 10px;
+  padding: 5px;
+  height: 50px;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-coupon-info .large-words {
+  margin-right: 3px;
+}
+.expiry {
+  height: 20px;
+  width: 60px;
+  background-color: #7E8A97;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+  color: white;
+}
+
+.expiry .p {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.btn1 {
+  width: 50px;
+  height: 50px;
+  background-color: #E7DEC8;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+/* make it an icon and add background and then border radius 50%  */
+
+.bottom{
+  padding: 5px;
+  display: flex;
+}
+.words {
+  flex-grow: 1;
+}
+
+.btn2 {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #E7DEC8;
+  border-radius: 50%;
+  margin-top: 20px;
+}

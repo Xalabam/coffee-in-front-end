@@ -3,12 +3,13 @@
     "pages/index/index",
     "pages/list/list",
     "pages/claims/claims",
+    "pages/coupons/coupons",
     "pages/show/show",
     "pages/new/new"
   ],
   "tabBar": {
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/coupons/coupons",
       "text": "Coupons"
     }, {
       "pagePath": "pages/list/list",
