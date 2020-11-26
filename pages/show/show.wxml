@@ -1,0 +1,25 @@
+<!--pages/show/show.wxml-->
+
+<image class='banner' src="http://www.sprinklesomesugar.com/wp-content/uploads/2017/01/IMG_5980.jpg"></image>
+
+
+<!-- <view>{{coupon}}</view> -->
+
+<view class ="h1">Awesome Deal for {{name}} Coffee</view>
+<view class ="h2">@{{shop_name}} Cafe</view>
+<view class ="p">Address: {{address}}</view>
+<view class ="coupon-details-container">
+<text class='p'>Details of offer: {{offer}} - so cheap!</text>
+<text class='p'>Valid Until:{{validity}}</text>
+</view>
+
+<view class ="cafe-info-container">
+<text class='p'>Cafe information:</text>
+<text class='p'>Sockets available</text>
+<text class='p'>Washroom available</text>
+</view>
+
+
+<button bindtap="claimThisCoupon" class='button-claim-coupon'>Claim this coupon!</button>
+
+ 

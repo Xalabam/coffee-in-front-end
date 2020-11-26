@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/list/list",
     "pages/claims/claims",
-    "pages/coupons/coupons"
+    "pages/coupons/coupons",
+    "pages/show/show",
+    "pages/new/new"
   ],
   "tabBar": {
     "list": [{

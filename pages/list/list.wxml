@@ -1,21 +1,24 @@
 <!--pages/list/list.wxml-->
+
 <view class="h1">Coffee In</view>
 <!-- add a search bar -->
 <view class="searchbar">Around me 📍</view>
 <!-- heading for the list of deals -->
 <view class ="h2">Deals near you</view>
 <!-- list of the deals contained in cards -->
-<view class="card-coupon">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <view class="card-coupon-infos">
-      <view class="h3">Buy one, get one on Christmas Lattes!</view>
-      <view class="coupon-details">
-        <view class="p">@Alex's Cuppas - Chengdu Road Store</view>
-        <view class="p">500m away</view>
-      </view>
+<view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
+  <view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}">
+    <view class="card-coupon-infos">
+      <image src="https://source.unsplash.com/600x300/?cafe,coffee" />
+        <view class="h3">Special deal on {{coupon.name}} Coffee!</view>
+        <view class="coupon-details">
+          <view class="p">At {{coupon.shop_name}} Cafe</view>
+          <view class="p">Expires on: {{coupon.validity}}</view>
+        </view>
+    </view>
   </view>
 </view>
-<view class="card-coupon">
+<!-- <view class="card-coupon">
   <image src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" />
   <view class="card-coupon-infos">
       <view class="h3">Buy one, get one on Christmas Lattes!</view>
@@ -24,5 +27,16 @@
         <view class="p">820m away</view>
       </view>
   </view>
-</view>
+</view> -->
  
+
+
+  <!-- <view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon"> -->
+    <!-- <view bindtap="goToShow" class="card-product" data-id="{{story.id}}"> -->
+    <!-- <image src="{{story.image}}" /> -->
+    <!-- <view class="card-product-infos">
+      <view class='h2'>{{coupon.name}}</view>
+      <text>{{coupon.offer}}</text>
+    </view>
+    <!-- </view> -->
+  <!-- </view> --> 
