@@ -35,13 +35,15 @@ Page({
       offer: offer,
       validity: validity,
       shop_info: shop_info,
+      user_id: getApp().globalData.userId
     }
 
     // Post data to API
     wx.request({
-      url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons`,
+      // url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons`,
+      url: `http://localhost:3000/api/v1/coupons`,
       method: 'POST',
-      data: coupon,
+      data: {coupon: coupon},
       success() {
         // redirect to index page when done
         wx.reLaunch({
