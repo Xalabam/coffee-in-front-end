@@ -15,6 +15,42 @@ Page({
 
   },
 
+  // New Coupon Submission
+  formSubmit: function (e) {
+    //...
+    console.log('data', e)
+    let shop_name = e.detail.value.shop_name;
+    let address = e.detail.value.address;
+    let contacts = e.detail.value.contacts;
+    let name = e.detail.value.name;
+    let offer = e.detail.value.offer;
+    let validity = e.detail.value.validity;
+    let shop_info = e.detail.value.shop_info;
+
+    let coupon = {
+      shop_name: shop_name,
+      address: address,
+      contacts: contacts,
+      name: name,
+      offer: offer,
+      validity: validity,
+      shop_info: shop_info,
+    }
+
+    // Post data to API
+    wx.request({
+      url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons`,
+      method: 'POST',
+      data: coupon,
+      success() {
+        // redirect to index page when done
+        wx.reLaunch({
+          url: '/pages/coupons/coupons'
+        });
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
