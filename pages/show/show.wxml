@@ -20,6 +20,6 @@
 </view>
 
 
-<button bindtap="claimThisCoupon" class='button-claim-coupon'>Claim this coupon!</button>
+<button bindtap="claimThisCoupon" class='button-claim-coupon' data-id="{{id}}">Claim this coupon!</button>
 
  
