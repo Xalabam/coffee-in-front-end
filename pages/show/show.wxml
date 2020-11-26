@@ -5,11 +5,11 @@
 
 <!-- <view>{{coupon}}</view> -->
 
-<view class ="h1">{{name}}</view>
-<view class ="h2">@{{shop_name}}</view>
-<view class ="p">{{address}}</view>
+<view class ="h1">Awesome Deal for {{name}} Coffee</view>
+<view class ="h2">@{{shop_name}} Cafe</view>
+<view class ="p">Address: {{address}}</view>
 <view class ="coupon-details-container">
-<text class='p'>{{offer}}</text>
+<text class='p'>Details of offer: {{offer}} - so cheap!</text>
 <text class='p'>Valid Until:{{validity}}</text>
 </view>
 

@@ -1,0 +1,91 @@
+<!--pages/coupons/coupons.wxml-->
+
+<view class="h1">Coupons Created</view>
+<!-- list of coupons you've created -->
+<view class="card-coupon">
+  <!-- header part of the coupon with basic info -->
+  <view class="coupon-info">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="p">Buy one get one Lattes</view>
+      <view class="p">Created on: 2020-12-25</view>
+    </view>
+      <view class="expiry p">Valid</view>
+     
+    </view>
+    <!-- bottom part of the coupon card with info for creator-->
+    <view class="bottom p">
+      <view class="words">
+        <view>Number Claimed: 102</view>
+        <view>Expires in: 6 days on 11-30-2020</view>
+      </view>
+      <button class='btn1' open-type='openSetting'>
+        <text>🗑</text>
+      </button>
+    </view>
+
+    
+</view>
+
+<view class="card-coupon">
+  <!-- header part of the coupon with basic info -->
+  <view class="coupon-info">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="p">Buy one get one Lattes</view>
+      <view class="p">Created on: 2020-12-25</view>
+    </view>
+      <view class="expiry p">Valid</view>
+     
+    </view>
+    <!-- bottom part of the coupon card with info for creator-->
+    <view class="bottom p">
+      <view class="words">
+        <view>Number Claimed: 102</view>
+        <view>Expires in: 6 days on 11-30-2020</view>
+      </view>
+      <button class='btn1' open-type='openSetting'>
+        <text>🗑</text>
+      </button>
+    </view>
+
+    
+</view>
+
+<view class="card-coupon">
+  <!-- header part of the coupon with basic info -->
+  <view class="coupon-info">
+    <view class="large-words">
+      <view class="h2">BOGO</view>
+    </view>
+    <view class="details">
+      <view class="p">Buy one get one Lattes</view>
+      <view class="p">Created on: 2020-12-25</view>
+    </view>
+      <view class="expiry p">Valid</view>
+     
+    </view>
+    <!-- bottom part of the coupon card with info for creator-->
+    <view class="bottom p">
+      <view class="words">
+        <view>Number Claimed: 102</view>
+        <view>Expires in: 6 days on 11-30-2020</view>
+      </view>
+      <button class='btn1' open-type='openSetting'>
+        <text>🗑</text>
+      </button>
+    </view>
+</view>
+
+<!-- add new button to add new coupon -->
+  <!-- <view class="bottom p">
+      <view class="words">
+      </view> -->
+      <button class='btn2' open-type='openSetting'>
+        <text>➕</text>
+      </button>
+    <!-- </view>   -->
