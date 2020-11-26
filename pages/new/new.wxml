@@ -4,19 +4,19 @@
   <view class ="h1">New Coupon</view>
   <view class="section">
     <view class="section__title">Coffe shop name</view>
-    <input name="shop_name" value="" placeholder="" />
+    <input name="shop_name" value="{{shop_name}}" placeholder="" />
     <view class="section__title">Adress</view>
-    <input name="address" placeholder="" />
+    <input name="address" value="{{address}}" placeholder="" />
     <view class="section__title">Contact information</view>
-    <input name="contacts" placeholder="" />
+    <input name="contacts" value="{{contacts}}" placeholder="" />
     <view class="section__title">Coupon name</view>
-    <input name="name" placeholder="" />
+    <input name="name" value="{{name}}" placeholder="" />
     <view class="section__title">Description of coupon</view>
-    <input name="offer" placeholder="" />
+    <input name="offer" value="{{offer}}" placeholder="" />
     <view class="section__title">Validity period</view>
-    <input name="validity" placeholder="" />
+    <input name="validity" value="{{validity}}" placeholder="" />
     <view class="section__title">Space information</view>
-    <input name="shop_info" placeholder="How many sockets? Any washroom?" />
+    <input name="shop_info" value="{{shop_info}}"placeholder="How many sockets? Any washroom?" />
   </view>
 
   <button form-type="submit" class='button-create-coupon'>Create Coupon!</button>
