@@ -36,7 +36,7 @@ Page({
     console.log(page.data)
     wx.request({
     
-      url: `https://coffee-in-xalabam.herokuapp.com/api/v1/coupons/${page.data.id}`,
+      url: getApp().globalData.host + `/api/v1/coupons/${page.data.id}`,
       success: function(res) {
         const coupon = res.data
         console.log(coupon)
@@ -82,9 +82,25 @@ Page({
 
   claimThisCoupon: function (event) {
     const id = event.currentTarget.dataset.id;
+      // let user = event.detail.value.user_id;
+      let user = getApp().globalData.userId;
+    console.log(user)
+      let coupon = event.currentTarget.dataset.id;
+    console.log(coupon)
 
-    wx.switchTab({
-      url: `/pages/claims/claims`,
-    })
+      let claim = {
+        user_id: user,
+        coupon_id: coupon
+      }
+      wx.request({
+        url: getApp().globalData.host + `/api/v1/claims`,
+        method: 'POST',
+        data: claim,
+        success() {
+          wx.switchTab({
+          url: `/pages/claims/claims`,
+          })
+        },
+      })
   },
 })

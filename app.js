@@ -1,6 +1,6 @@
 App({
   onLaunch: function () {
-    const host = 'http://localhost:3000/'
+    const host = this.globalData.host
       let page = this
     console.log("beginning login")
     wx.login({
@@ -17,11 +17,13 @@ App({
           success: (res) => {
             console.log(res.data)
             this.globalData.userId = res.data.user.id
-            console.log(this)
           }
         })
       }
     })
   },
-  globalData: {}
+  globalData: {
+    host: 'http://localhost:3000/',
+    // host: 'https://coffee-in-xalabam.herokuapp.com/',
+  }
 })
