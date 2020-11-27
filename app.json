@@ -11,12 +11,14 @@
 
   ],
   "tabBar": {
-    
+    "custom": true,
+    "color": "#333232"
+
     "list": [{
       "pagePath": "pages/coupons/coupons",
       "text": "New Coupon",
-      "iconPath": "images/ic-discount.png"
-      
+      "iconPath": "images/ic-discount.png",
+      "selectedIconPath": "images/ic-discount.png"
     }, {
       "pagePath": "pages/list/list",
       "text": "Home",
@@ -26,7 +28,8 @@
     }, {
         "pagePath": "pages/claims/claims",
         "text": "Coupons Wallet",
-        "iconPath": "images/ic-wallet.png"
+        "iconPath": "images/ic-wallet.png",
+        "selectedIconPath": "images/ic-wallet.png"
               
     }],
     "position": "bottom"
