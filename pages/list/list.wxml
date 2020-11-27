@@ -2,7 +2,13 @@
 
 <view class="h1">Coffee In</view>
 <!-- add a search bar -->
-<view class="searchbar">Around me 📍</view>
+<view class="searchbar">
+  <input name="query" type="text" placeholder="What's your favorite coffee?" bindinput="searchCoffee">
+  <!-- bindconfirm is another bind we can use but only when user confirms -->
+  </input>
+
+</view>
+
 <!-- heading for the list of deals -->
 <view class ="h2">Deals near you</view>
 <!-- list of the deals contained in cards -->
