@@ -19,12 +19,11 @@ Page({
   deleteCoupon: function (e) {
     // console.log(e)
     // let coupon = e.currentTarget.dataset.id;
-      const data = e.currentTarget.dataset;
-      console.log(data)
-
+      const id = e.currentTarget.dataset;
+    console.log(id)
       // make a DELETE request
       wx.request({
-        url: `http://localhost:3000/api/v1/coupons/${id}`,
+        url: getApp().globalData.host + `api/v1/coupons/${id.id}`,
         method: 'DELETE',
         success() {
           // redirect to index page when done
@@ -58,9 +57,18 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  onShow: function () {
-
-  },
+  onShow: function () {  
+    const page = this
+  const id = getApp().globalData.userId
+  console.log(id)
+    wx.request({
+      url: `http://localhost:3000/api/v1/users/${id}/coupons`,
+      success: function (res) {
+        const coupons = res.data
+        page.setData(coupons)
+      }
+    })
+},
 
   /**
    * Lifecycle function--Called when page hide
