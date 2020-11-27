@@ -11,9 +11,9 @@
 
   ],
   "tabBar": {
-    "custom": true,
-    "color": "#333232"
-
+    "backgroundColor": "#E7DEC8",
+    "color": "#6d6d6d",
+    "selectedColor": "#ac4120",
     "list": [{
       "pagePath": "pages/coupons/coupons",
       "text": "New Coupon",
