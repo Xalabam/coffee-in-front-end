@@ -1,46 +1,25 @@
 <!--pages/list/list.wxml-->
- searchbar
-<view class="body">
-  <view class="header">
-    <view class="h1">Coffee In</view>  
+<view class="body"> 
+<view class="header">
+  <view class="h1">Coffee In</view>  
 </view>
 
 <!-- add a search bar -->
 <view class="searchbar">
-  <input name="query" type="text" placeholder="What's your favorite coffee?" bindinput="searchCoffee">
   <!-- bindconfirm is another bind we can use but only when user confirms -->
-  </input>
-
+  <input name="query" type="text" placeholder="What's your favorite coffee?" bindinput="searchCoffee"></input>
 </view>
-
-<!-- heading for the list of deals -->
 <view class ="h2">Deals near you</view>
-<!-- list of the deals contained in cards -->
-<view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
-  <view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}">
+  <!-- list of the deals contained in cards -->
+<view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}" wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
+  <!-- <view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}"> -->
     <view class="card-coupon-infos">
-      <image src="https://source.unsplash.com/600x300/?cafe,coffee" />
+      <image src="{{coupon.image}}"/>
         <view class="h3">Special deal on {{coupon.name}} Coffee!</view>
         <view class="coupon-details">
-          <view class="p">At {{coupon.shop_name}} Cafe</view>
+          <view id="shop_name" class="p">At {{coupon.shop_name}} Cafe</view>
           <view class="p">Expires on: {{coupon.validity}}</view>
         </view>
     </view>
-
-  <!-- heading for the list of deals -->
-  <view class ="h2">Deals near you</view>
-  <!-- list of the deals contained in cards -->
-  <view wx:key='index' wx:for="{{coupons}}" wx:for-item="coupon">
-    <view bindtap="goToShow" class="card-coupon" data-id="{{coupon.id}}">
-      <view class="card-coupon-infos">
-        <image src="{{coupon.image}}" />
-          <view class="h3">Special deal on {{coupon.name}} Coffee!</view>
-          <view class="coupon-details">
-            <view id="shop_name" class="p">At {{coupon.shop_name}} Cafe</view>
-            <view class="p">Expires on: {{coupon.validity}}</view>
-          </view>
-      </view>
-    </view>
   </view>
 </view>
-
