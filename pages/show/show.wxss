@@ -29,6 +29,16 @@
   font-weight: bold;
 }
 
+.button-backtohome {
+  border-radius: 4px;
+  background:black;
+  margin-top: 10px;
+  width: 70%;
+  font-size: 30rpx;
+  margin-bottom: 5px;
+  color: white;
+}
+
 .coupon-details-container {
   background-color: #E7DEC8;
   color: black;
@@ -68,7 +78,7 @@ margin-left: 10px;
 }
 
 .banner {
-margin-bottom: 1px;
-height: 170px;
+margin-bottom: 3px;
+height: 250px;
 width: 100%;
 }
