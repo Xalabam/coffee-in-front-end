@@ -79,6 +79,11 @@ Page({
   onShareAppMessage: function () {
 
   },
+  backToHome: function(event){
+    wx.switchTab({
+      url: `/pages/list/list`,
+      })
+  },
 
   claimThisCoupon: function (event) {
     const id = event.currentTarget.dataset.id;
