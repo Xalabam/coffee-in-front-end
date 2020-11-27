@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/list/list",
-    "pages/claims/claims",
     "pages/coupons/coupons",
+    "pages/claims/claims",
     "pages/show/show",
     "pages/new/new",
     "pages/tabOne/tabOne",
@@ -12,21 +11,22 @@
 
   ],
   "tabBar": {
-    "custom": true,
+    
     "list": [{
       "pagePath": "pages/coupons/coupons",
-      "text": "Coupons",
-      "iconPath": "/images/ic-discount.png",
-      "selectedIconPath": "/images/ic-discount.png"
+      "text": "New Coupon",
+      "iconPath": "images/ic-discount.png"
+      
     }, {
       "pagePath": "pages/list/list",
       "text": "Home",
-      "iconPath": "/images/ic-home.png",
-      "selectedIconPath": "/images/ic-home.png"
+      "iconPath": "images/ic-home.png",
+      "selectedIconPath": "images/ic-home.png"
+      
     }, {
         "pagePath": "pages/claims/claims",
-        "text": "Claims",
-        "iconPath": "/images/ic-home.png"
+        "text": "Coupons Wallet",
+        "iconPath": "images/ic-wallet.png"
               
     }],
     "position": "bottom"
