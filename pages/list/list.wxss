@@ -1,6 +1,20 @@
 /* pages/list/list.wxss */
+page {
+background-color: #F7F7F7;
+}
+
+.body {
+margin: 0 auto;
+max-width: 660rpx;
+}
+
+.header {
+background-color: ;
+}
+
 .searchbar {
-  margin-left: 10px;
+  color: #555;
+  margin-left: 0px;
   margin-right: 10px;
   padding: 10px;
   width: 340px;
@@ -10,10 +24,11 @@
   border-radius: 5px;
   background-color: #E7DEC8;
 }
+
 .h1 {
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 10px;
-  color: black;
+  color: #333;
   text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.2);
   font-size: 60rpx;
   font-weight: bold;
@@ -22,14 +37,14 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
-  color: black;
+  color: #333;
   font-size: 45rpx;
   font-weight: bold;
 }
 .h3 {
   margin-top: 3px;
   margin-left: 10px;
-  color: black;
+  color: #333;
   font-size: 35rpx;
   font-weight: bold;
 }
@@ -37,33 +52,28 @@
   margin-top: 3px;
   margin-left: 10px;
   margin-bottom: 10px;
-  color: black;
+  color: #333;
   font-size: 25rpx;
 }
+/*
+#E7DEC8;
+rgba(255, 251, 241, 0.619) - old background;
+nice orange - #F7B05B*/
 
+#shop_name {
+  font-weight: 500;
+}
 .card-coupon {
   overflow: hidden;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  border-radius: 10px;
-  margin: 5px;
-  padding: 5px 5px;
+  background:rgba(231,222,200,0.6);
+  box-shadow: 0 0 10rpx rgba(0,0,0,0.5);
+  border-radius: 8px;
+  margin: 40rpx 10rpx;
 }
 
-/* .card-coupon h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-coupon p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-} */
 
 .card-coupon .card-coupon-infos {
-  padding: 5px;
+  padding: 0px;
   /* display: flex; */
   /* justify-content: space-between; */
   align-items: flex-end;
@@ -75,12 +85,13 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  padding: 20rpx;
 }
 
 image {
-  height: 120px;
+  height: 100px;
   width: 100%;
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  border-radius: 10px;
+  box-shadow: 0 0 5rpx rgba(0,0,0,0.5);
+  border-radius: 1px;
 }
