@@ -23,7 +23,7 @@ App({
     })
   },
   globalData: {
-    host: 'http://localhost:3000/',
-    // host: 'https://coffee-in-xalabam.herokuapp.com/',
+    // host: 'http://localhost:3000/',
+    host: 'https://coffee-in-xalabam.herokuapp.com/',
   }
 })

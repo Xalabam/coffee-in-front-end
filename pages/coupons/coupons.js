@@ -20,6 +20,7 @@ Page({
     // console.log(e)
     // let coupon = e.currentTarget.dataset.id;
       const id = e.currentTarget.dataset;
+      const page = this
     console.log(id)
       // make a DELETE request
       wx.request({
@@ -27,24 +28,25 @@ Page({
         method: 'DELETE',
         success() {
           // redirect to index page when done
-          wx.switchTab({
-            url: '/pages/coupons/coupons'
-          });
+          page.onShow()
+          // wx.switchTab({
+          //   url: '/pages/coupons/coupons'
+          // });
         }
       });
   },
 
   onLoad: function (options) {  
-      const page = this
-    const id = getApp().globalData.userId
-    console.log(id)
-      wx.request({
-        url: `http://localhost:3000/api/v1/users/${id}/coupons`,
-        success: function (res) {
-          const coupons = res.data
-          page.setData(coupons)
-        }
-      })
+    // const page = this
+    // const id = getApp().globalData.userId
+    // console.log(id)
+    // wx.request({
+    //   url: getApp().globalData.host + `api/v1/users/${id}/coupons`,
+    //   success: function (res) {
+    //     const coupons = res.data
+    //     page.setData(coupons)
+    //   }
+    // })
   },
 
   /**
@@ -59,10 +61,10 @@ Page({
    */
   onShow: function () {  
     const page = this
-  const id = getApp().globalData.userId
-  console.log(id)
+    const id = getApp().globalData.userId
+    console.log(id)
     wx.request({
-      url: `http://localhost:3000/api/v1/users/${id}/coupons`,
+      url: getApp().globalData.host + `api/v1/users/${id}/coupons`,
       success: function (res) {
         const coupons = res.data
         page.setData(coupons)
