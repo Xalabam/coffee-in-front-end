@@ -5,7 +5,11 @@
     "pages/claims/claims",
     "pages/coupons/coupons",
     "pages/show/show",
-    "pages/new/new"
+    "pages/new/new",
+    "pages/tabOne/tabOne",
+    "pages/tabTwo/tabTwo",
+    "pages/tabThree/tabThree"
+
   ],
   "tabBar": {
     "custom": true,
@@ -21,8 +25,11 @@
       "selectedIconPath": "/images/ic-home.png"
     }, {
         "pagePath": "pages/claims/claims",
-        "text": "Claims"
-    }]
+        "text": "Claims",
+        "iconPath": "/images/ic-home.png"
+              
+    }],
+    "position": "bottom"
   },
 
   "window": {
