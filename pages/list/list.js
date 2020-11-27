@@ -11,6 +11,23 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+  searchCoffee: function(e) {
+    console.log(e)
+    const query = e.detail.value
+    const base_url = getApp().globalData.host + 'api/v1/'
+
+    const page = this
+    wx.request({
+      url: base_url + 'coupons?query=' + query,
+      success: function (response) {
+      //  console.log('123',response)
+        const coupons = response.data.coupons
+        page.setData({ coupons })
+      }
+    })
+    wx.request()
+  },
+
   onLoad: function (options) {
     
     // const base_url = 'http://localhost:3000/api/v1/'

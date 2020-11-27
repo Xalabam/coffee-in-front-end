@@ -18,8 +18,9 @@ background-color: ;
   margin-right: 10px;
   padding: 10px;
   width: 340px;
-  height: 25px;
+  height: 20px;
   text-align: left;
+  font-weight: lighter;
   border-radius: 5px;
   background-color: #E7DEC8;
 }
