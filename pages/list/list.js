@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-  
+ 
   },
   
   /**
@@ -43,7 +43,11 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    const coffee_image = 'https://source.unsplash.com/600x300/?cafe,coffee'
+    
+    const cafe_pics = ["https://source.unsplash.com/600x300/?cafe", "https://source.unsplash.com/600x300/?coffee", "https://source.unsplash.com/600x300/?brunch", "https://source.unsplash.com/600x300/?tea", "https://source.unsplash.com/600x300/?breakfast", "https://source.unsplash.com/600x300/?pancake", "https://source.unsplash.com/600x300/?cake"]
+   
+    // console.log(cafe_pic)
+    // const coffee_image = 'https://source.unsplash.com/600x300/?cafe,coffee'
     const base_url = getApp().globalData.host + 'api/v1/'
 
     const page = this
@@ -51,7 +55,13 @@ Page({
       url: base_url + 'coupons',
       success: function (response) {
       //  console.log('123',response)
-        const coupons = response.data.coupons
+        let coupons = response.data.coupons
+        coupons = coupons.map(coupon => {
+          let new_coupon = coupon
+          new_coupon["image"] = cafe_pics[Math.floor(Math.random() * cafe_pics.length)]
+          return new_coupon
+        })
+        console.log(111,coupons)
         page.setData({ coupons })
       }
     })
