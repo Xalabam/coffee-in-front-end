@@ -1,23 +1,38 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/list/list",
-    "pages/claims/claims",
     "pages/coupons/coupons",
+    "pages/claims/claims",
     "pages/show/show",
-    "pages/new/new"
+    "pages/new/new",
+    "pages/tabOne/tabOne",
+    "pages/tabTwo/tabTwo",
+    "pages/tabThree/tabThree"
+
   ],
   "tabBar": {
+    "backgroundColor": "#E7DEC8",
+    "color": "#6d6d6d",
+    "selectedColor": "#ac4120",
     "list": [{
       "pagePath": "pages/coupons/coupons",
-      "text": "Coupons"
+      "text": "New Coupon",
+      "iconPath": "images/ic-discount.png",
+      "selectedIconPath": "images/ic-discount.png"
     }, {
       "pagePath": "pages/list/list",
-      "text": "Home"
+      "text": "Home",
+      "iconPath": "images/ic-home.png",
+      "selectedIconPath": "images/ic-home.png"
+      
     }, {
         "pagePath": "pages/claims/claims",
-        "text": "Claims"
-    }]
+        "text": "Coupons Wallet",
+        "iconPath": "images/ic-wallet.png",
+        "selectedIconPath": "images/ic-wallet.png"
+              
+    }],
+    "position": "bottom"
   },
 
   "window": {
