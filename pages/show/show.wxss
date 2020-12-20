@@ -1,4 +1,7 @@
-/* pages/show/show.wxss */
+page {
+  background-color: #f7f1e1;
+}
+
 .body {
  margin: 0 0 0 50rpx;
 }
@@ -6,7 +9,7 @@
 
 .h1 {
   margin-bottom: 20px;
-  color: black;
+  color: #333;
   text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.2);
   font-size: 60rpx;
   font-weight: bold;
@@ -19,6 +22,15 @@
   font-size: 55rpx;
 }
 
+.h3 {
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+
+.validity {
+  text-decoration: underline;
+}
+
 .p {
   font-size: 14px;
   margin: 25rpx 0 25rpx 0;
@@ -27,12 +39,15 @@
 .validity {
   font-weight: bolder;
   text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .button-claim-coupon {
   border-radius: 4px;
-  background: #333;
-  margin-top: 5px;
+  background: #ac4120;
+  margin-top: 25rpx;
   width: 70%;
   font-size: 45rpx;
   margin-bottom: 5px;
@@ -40,9 +55,13 @@
   font-weight: bold;
 }
 
+.address {
+  margin: 0 0 60rpx 0;
+}
+
 .button-backtohome {
   border-radius: 4px;
-  background:#E7DEC8;
+  background:rgb(255, 255, 255);
   margin-top: 10px;
   width: 70%;
   font-size: 30rpx;
@@ -60,7 +79,6 @@
 }
 
 .cafe-info-container {
-  background-color: #fff;
   width: 95%;
   border-radius: 5px;
   line-height: 1.5;
