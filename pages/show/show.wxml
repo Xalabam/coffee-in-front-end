@@ -4,21 +4,22 @@
 
 
 <!-- <view>{{coupon}}</view> -->
-
-<view class ="h1">Awesome Deal for {{name}} Coffee</view>
-<view class ="h2">@{{shop_name}} Cafe</view>
-<view class ="p">Address: {{address}}</view>
-<view class ="coupon-details-container">
-<text class='p'>Details of offer: {{offer}} - so cheap!</text>
-<text class='p'>Valid Until:{{validity}}</text>
+<view class="body">
+  <view class ="h1">Deal for {{name}} Coffee</view>
+  <view class ="coupon-details-container">
+    <view class='p'>Details of offer: {{offer}} - so cheap!</view>
+  </view>
+  
+  
+  <view class ="cafe-info-container">
+    <view class ="h2">{{shop_name}} Cafe</view>
+    <view class ="p address">📍{{address}}</view>
+    <!-- <view class='h3'>Cafe information: </view> -->
+    <view class='h3'>- Sockets available</view>
+    <view class='h3'>- Washroom available</view>
+  </view>
 </view>
-
-<view class ="cafe-info-container">
-<text class='p'>Cafe information:</text>
-<text class='p'>Sockets available</text>
-<text class='p'>Washroom available</text>
-</view>
-
+<view class='h3 validity'>Valid Until: {{validity}}</view>
 
 <button bindtap="claimThisCoupon" class='button-claim-coupon' data-id="{{id}}">Claim this coupon!</button>
 <button bindtap="backToHome" class='button-backtohome'>Back to all coupons</button>
