@@ -52,9 +52,14 @@ background-color: #F7F7F7;
   margin: 5px;
   margin-bottom: 7px;
   padding: 5px 5px;
-  height: 120px;
+  height: auto;
+
 }
 
+.body{
+  margin: 0 auto;
+max-width: 660rpx;
+}
 
 .coupon-details {
   display: flex;
@@ -75,13 +80,16 @@ image {
   background-color: #E7DEC8;
   border-radius: 10px;
   padding: 5px;
-  height: 50px;
+  height: 70px;
   width: 97%;
   display: flex;
   justify-content: space-between;
 }
-.card-coupon-info .large-words {
-  margin-right: 3px;
+.large-words {
+  margin-right: 2px;
+  font-size: 25px;
+  margin-left: 2px;
+  font-weight: bold;
 }
 .expiry {
   height: 20px;

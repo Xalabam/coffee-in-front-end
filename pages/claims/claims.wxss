@@ -4,6 +4,7 @@
   background-size: cover; 
   background-position: center;
   padding: 50rpx 20rpx;
+  background-attachment: fixed;
 }
 
 .h1 {
@@ -25,7 +26,7 @@
 }
 .card-coupon {
   overflow: hidden;
-  height: 100px;
+  height: auto;
   background:#E7DEC8;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -65,8 +66,20 @@
   border-radius: 20px;
   text-align: center;
   padding: 2px;
-  margin: 0;
+  margin-left: 10px;
   font-weight: bold;
   color: white;
+}
+
+.deal {
+  width: 170rpx;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 40rpx;
+  font-weight: bold;
+  overflow: hidden;
 }
 
