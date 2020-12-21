@@ -8,11 +8,11 @@
   <view class="card-coupon">
     <view class="card-coupon-infos">
       <view class="large-words">
-        <view class="h2">{{claim.name}}</view>
+        <view class="deal">{{claim.name}} BOGO</view>
       </view>
       <view class="details">
-        <view class="h2">{{claim.offer}}</view>
-        <view class="p">@ {{claim.shop_name}}</view>
+        <view class="h2">Special deal on {{claim.offer}}</view>
+        <view class="p">@ {{claim.shop_name}} Cafe</view>
         <view class="p">Expires on: {{claim.validity}}</view>
         <view class="expiry p">Valid</view>
       </view>
@@ -21,44 +21,8 @@
 </view>
 
 <!-- hard coded details -->
-<view class="card-coupon">
-  <view class="card-coupon-infos">
-    <view class="large-words">
-      <view class="h2">BOGO</view>
-    </view>
-    <view class="details">
-      <view class="h2">Buy one get one Lattes</view>
-      <view class="p">@Alex's Cuppas</view>
-      <view class="p">Expires on: 2020-12-25</view>
-      <view class="expiry p">Valid</view>
-    </view>
-  </view>
-</view>
 
-<view class="card-coupon">
-  <view class="card-coupon-infos">
-    <view class="large-words">
-      <view class="h2">BOGO</view>
-    </view>
-    <view class="details">
-      <view class="h2">Buy one get one Mochas</view>
-      <view class="p">@Ariel's Cuppas</view>
-      <view class="p">Expires on: 2020-11-30</view>
-      <view class="expiry p">Valid</view>
-    </view>
-  </view>
-</view>
-<view class="card-coupon">
-  <view class="card-coupon-infos">
-    <view class="large-words">
-      <view class="h2">Set Deal</view>
-    </view>
-    <view class="details">
-      <view class="h2">Cake and Coffee</view>
-      <view class="p">@Hasan's Cuppas</view>
-      <view class="p">Expires on: 2021-1-1</view>
-      <view class="expiry p">Valid</view>
-    </view>
-  </view>
-</view>
+
+
+
 </view>
